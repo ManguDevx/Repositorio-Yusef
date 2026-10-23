@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo tecnológico</title>
+    <meta name="description" content="Explora nuestro catálogo de productos tecnológicos, accesorios y dispositivos.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen bg-neutral-100 font-sans text-neutral-900">
+
+    
+
+    <!-- ENCABEZADO PRINCIPAL -->
+    <header class="relative overflow-hidden bg-neutral-800 px-6 py-14 text-center text-white sm:py-20">
+
+        <!-- CÍRCULOS DECORATIVOS -->
+        <div class="pointer-events-none absolute -right-12 -top-16 h-64 w-64 rounded-full border-[16px] border-white/5"></div>
+        <div class="pointer-events-none absolute -left-10 -bottom-24 h-52 w-52 rounded-full border-[12px] border-white/5"></div>
+
+        <div class="relative z-10 mx-auto max-w-3xl">
+            <p class="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-blue-400">
+                Tecnología para ti
+            </p>
+
+            <h1 class="text-3xl font-extrabold sm:text-5xl">
+                PRODUCTOS TECNOLÓGICOS
+            </h1>
+
+            <p class="mx-auto mt-5 max-w-xl text-sm leading-6 text-neutral-300 sm:text-base">
+                Descubre dispositivos y accesorios tecnológicos para tu día a día.
+            </p>
+
+            <a href="#productos"
+               class="mt-7 inline-block rounded-lg bg-blue-500 px-6 py-3 text-sm font-bold text-white transition hover:bg-blue-600">
+                Ver productos
+            </a>
+        </div>
+    </header>
+
+    <!-- CATÁLOGO -->
+    <main id="productos" class="mx-auto max-w-7xl px-5 py-12 sm:px-8 sm:py-16">
+
+        <div class="mb-8 flex flex-wrap items-end justify-between gap-3">
+            <div>
+                <h2 class="text-2xl font-extrabold sm:text-3xl">
+                    Nuestro catálogo
+                </h2>
+
+                <p class="mt-2 text-sm text-neutral-500">
+                    Explora nuestros productos destacados.
+                </p>
+            </div>
+
+            <span class="text-sm font-medium text-neutral-500">
+                4 productos
+            </span>
+        </div>
+
+        <!-- CUADRÍCULA RESPONSIVE -->
+        <section class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+            <!-- PRODUCTO 1 -->
+            <article class="group overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                <div class="flex h-64 items-center justify-center bg-white p-5">
+                    <img
+                        src="images/img1.jpg"
+                        alt="Samsung Galaxy A54 5G de 128 GB y 8 GB de RAM"
+                        class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
+                    >
+                </div>
+
+                <div class="border-t border-neutral-100 p-5">
+                    <p class="text-xs font-bold uppercase tracking-wider text-blue-500">
+                        Smartphones
+                    </p>
+
+                    <h3 class="mt-2 text-base font-bold">
+                        Samsung Galaxy A54 5G
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-5 text-neutral-500">
+                        Versión de 128 GB de almacenamiento y 8 GB de RAM.
+                    </p>
+
+                    <p class="mt-4 text-xl font-extrabold text-blue-600">
+                        $499.900 COP
+                    </p>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 2 -->
+            <article class="group overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                <div class="flex h-64 items-center justify-center bg-white p-5">
+                    <img
+                        src="images/img2.jpg"
+                        alt="Funda para celular de Gojo"
+                        class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
+                    >
+                </div>
+
+                <div class="border-t border-neutral-100 p-5">
+                    <p class="text-xs font-bold uppercase tracking-wider text-blue-500">
+                        Accesorios
+                    </p>
+
+                    <h3 class="mt-2 text-base font-bold">
+                        Funda de Gojo
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-5 text-neutral-500">
+                        Funda decorativa para darle estilo y personalidad a tu celular.
+                    </p>
+
+                    <p class="mt-4 text-xl font-extrabold text-blue-600">
+                        $20.000 COP
+                    </p>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 3 -->
+            <article class="group overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                <div class="flex h-64 items-center justify-center bg-white p-5">
+                    <img
+                        src="images/img3.jpg"
+                        alt="Audífonos"
+                        class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
+                    >
+                </div>
+
+                <div class="border-t border-neutral-100 p-5">
+                    <p class="text-xs font-bold uppercase tracking-wider text-blue-500">
+                        Audio
+                    </p>
+
+                    <h3 class="mt-2 text-base font-bold">
+                        Audífonos
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-5 text-neutral-500">
+                        Accesorio de audio para disfrutar tu música y contenido favorito.
+                    </p>
+
+                    <p class="mt-4 text-xl font-extrabold text-blue-600">
+                        $39.000
+                    </p>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 4 -->
+            <article class="group overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                <div class="flex h-64 items-center justify-center bg-white p-5">
+                    <img
+                        src="images/img4.jpg"
+                        alt="Mouse Logitech para oficina"
+                        class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
+                    >
+                </div>
+
+                <div class="border-t border-neutral-100 p-5">
+                    <p class="text-xs font-bold uppercase tracking-wider text-blue-500">
+                        Periféricos
+                    </p>
+
+                    <h3 class="mt-2 text-base font-bold">
+                        Mouse Logitech
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-5 text-neutral-500">
+                        Mouse para tareas de oficina, estudio y uso cotidiano.
+                    </p>
+
+                    <p class="mt-4 text-xl font-extrabold text-blue-600">
+                        $29.900 COP
+                    </p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+</body>
+</html>
